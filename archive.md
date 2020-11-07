@@ -1,10 +1,10 @@
 ---
-bg: "tag.jpg"
+bg: "style-guide.jpg"
 layout: page
 permalink: /posts/
-title: "Archive"
+title: "Архив"
 crawlertitle: "All articles"
-summary: "Posts about Machine Learning"
+summary: "Архив всех публикаций"
 active: archive
 ---
 
