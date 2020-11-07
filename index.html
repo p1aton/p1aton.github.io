@@ -1,0 +1,15 @@
+---
+bg: "rails.jpg"
+layout: default
+crawlertitle: "Data Science without Borders"
+title: "Data Science without Borders"
+summary: "Home"
+---
+
+{% for post in site.posts limit: 5 %}
+  <article class="index-page">
+  	<span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    {{ post.excerpt }}
+  </article>
+{% endfor %}

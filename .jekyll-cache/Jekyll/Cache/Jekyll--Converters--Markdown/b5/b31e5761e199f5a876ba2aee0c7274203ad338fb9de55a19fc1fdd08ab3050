@@ -1,0 +1,35 @@
+I"9<p>Gradient boosting is a popular idea to improve the efficiency of weak learners.</p>
+
+<hr />
+<ol>
+  <li>
+    <p>Boosting: Sequentially adding weak learners at each stage to compensate existing weak learners.</p>
+  </li>
+  <li>
+    <p>Gradient: Identify shortcomings of exisiting weak learners.</p>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="algorithm">Algorithm</h2>
+
+<ul>
+  <li>At iteration i: model is \(F_i(x_1)\), response is \(y_1\), residual is \(y_1 - F_i(x_1)\)</li>
+</ul>
+
+<p>(1) let \(h_i(x_1)\) = \(y_1 - F_i(x_1)\)</p>
+
+<p>(2) fit regression tree \(h\) to data \((x_1, y_1 - F_i(x_1)), (x_2, y_2 - F_i(x_2))\) - Boosting concept to compensate the shortcomings of existing weak learners</p>
+
+<p>(3) Gradient concept:</p>
+
+<p>Loss function \(L(y, F(x)) = (y-F(x))^2\),</p>
+
+<p>Cost function \(J = \sum L(y_i, F(x_i))\), treat \(F(x_i)\) as a parameter and take derivatives:</p>
+
+<p>\(\frac{dJ}{dF(x_i)} = F(x_i) - y_i\), which is the negative residual - shortcoming, hence update \(F(x_i)\) by the gradient:</p>
+
+\[F(x_i) = F(x_i) - \frac{dJ}{dF(x_i)} = F(x_i) - (F(x_i) - y_i)\]
+
+:ET

@@ -1,0 +1,11 @@
+I"c<p>This short MySQL script shows an aproach to compute the moving average.</p>
+
+<h4 id="mysql---7-day-moving-average">MySQL - 7 Day Moving Average</h4>
+
+<pre><code class="language-SQL">      SELECT 
+      FROM signups
+      JOIN signups as sigups_past 
+      ON signups_past.date between signup.date - 6 and signups.date
+      GROUP BY 1, 2
+</code></pre>
+:ET

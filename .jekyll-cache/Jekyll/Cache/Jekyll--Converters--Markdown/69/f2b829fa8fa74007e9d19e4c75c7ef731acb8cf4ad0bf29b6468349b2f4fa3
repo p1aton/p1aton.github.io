@@ -1,0 +1,63 @@
+I"&<h2 id="general-problems-and-strategies-in-database-marketing">General problems and strategies in Database Marketing</h2>
+<ol>
+  <li>Customer retention, which sometimes can be even more important than customer acquisition. For example, according to research, a 5% increase in customer retention could increase company profitability from 25% to 85%. <sup><a href="#ref1">[1]</a></sup></li>
+</ol>
+
+<h2 id="issues-tackeld-in-this-post-using-an-open-online-retail-dataset-2">Issues Tackeld in this post using <a href="http://archive.ics.uci.edu/ml/datasets/online+retail">an open online retail dataset</a> <sup><a href="#ref2">[2]</a></sup></h2>
+<ol>
+  <li>How predicting customer lifetime values helps you define customer segmentation - hence derives segment specific marketing strategies</li>
+</ol>
+
+<p>(1) Prelimiary data exploration for customer segments using basic <strong>RFM</strong> implementation in Python</p>
+
+<hr />
+<ul>
+  <li><strong>R</strong> means <strong>Recency</strong>: it is the time from the last transaction of the customer to current time</li>
+  <li><strong>F</strong> means <strong>Frequency</strong>: it is how many already made transactions the customer has had overall</li>
+  <li><strong>M</strong> means <strong>Monetary value</strong>: it is how much money the customer has contributed overall</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># import online retail dataset
+
+import pandas as pd
+import datetime as dt
+
+df = pd.read_excel("Online_Retail.xlsx", sheetnames = "Online Retail", converters={'CustomerID': str})
+df['ParsedInvoiceDate'] = df['InvoiceDate'].apply(lambda x: dt.datetime.strftime(x, "%Y-%m-%d"))
+df.head()
+</code></pre></div></div>
+
+<p><img src="/assets/images/online_retail_imported.png" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>df['ParsedInvoiceDateFrequency'] = df['InvoiceDate'].apply(lambda x: pd.to_datetime(x.date(), format="%Y-%m-%d"))
+df['ParsedInvoiceDateRecency'] = df['InvoiceDate'].apply(lambda x: pd.to_datetime(x.date(), format="%Y-%m-%d"))
+
+now = dt.datetime.now()
+now = now.strftime("%Y-%m-%d")
+
+data['Sales'] = data['UnitPrice']*data['Quantity']
+
+# Group transactions into customer: 
+# frequency(how many unique days a transaction happened), recency(last transaction until today), money(sum of all spend)
+data = data.groupby(['CustomerID']).agg({'ParsedInvoiceDateFrequency': lambda x: x.nunique(),
+                                         'ParsedInvoiceDateRecency': lambda x: pd.to_datetime(now, format="%Y-%m-%d") -   
+                                         pd.to_datetime(x.dt.date.max(), format = "%Y-%m-%d"),
+                                         'Sales': lambda x: sum(x)
+                                        })
+data.rename(columns = {"ParsedInvoiceDateFrequency": "Frequency", 
+                       "ParsedInvoiceDateRecency": "Recency",
+                       "Sales": "Monetary"
+                      }, inplace=True)
+data.head()
+</code></pre></div></div>
+
+<p><img src="/assets/images/rfm_df.png" /></p>
+
+<h2 id="reference">Reference</h2>
+<p><a name="ref1">[1]</a>: <a href="http://www.internetrix.com.au/blog/how-to-model-customer-lifetime-value/">How to Model Your Cusotmers’ Lifetime Value</a></p>
+
+<p><a name="ref2">[2]</a>: <a href="http://archive.ics.uci.edu/ml/datasets/online+retail">Online Retail Data Set</a></p>
+
+<p><a href="http://mktg.uni-svishtov.bg/ivm/resources/Counting_Your_Customers.pdf">“Counting Your Customers” the Easy Way: An Alternative to the Pareto/NBD Model</a></p>
+
+:ET

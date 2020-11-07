@@ -1,0 +1,37 @@
+I"°<ol>
+  <li>
+    <h2 id="geometry-of-linear-equations">Geometry of Linear Equations</h2>
+  </li>
+</ol>
+
+<h2 id="matrix---vector-multiplication-ax">Matrix - Vector Multiplication: \(Ax\)</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>2</th>
+      <th style="text-align: center">-1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-1</td>
+      <td style="text-align: center">2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>\[
+\begin{bmatrix}
+    x_{11}       &amp; x_{12} &amp; x_{13} &amp; x_{1n} \<br />
+    x_{21}       &amp; x_{22} &amp; x_{23} &amp; x_{2n} \<br />
+    x_{d1}       &amp; x_{d2} &amp; x_{d3} &amp; x_{dn} \<br />
+\end{bmatrix}
+\]</p>
+<h2 id="references">References:</h2>
+
+<h4 id="video-lectures">Video Lectures:</h4>
+<ul>
+  <li><a href="https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-1-the-geometry-of-linear-equations/">Prof. Gilbert Strang - MIT 18.06 - Lecture 1</a></li>
+</ul>
+:ET
