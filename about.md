@@ -1,11 +1,11 @@
 ---
 bg: "surfing.jpg"
 layout: page
-title: "Обо мне"
+title: "Верь в себя. Действуй"
 crawlertitle: "Why and how this blog was created"
 permalink: /about/
 summary: "Обо мне"
-active: Верь в себя. Действуй
+active: about
 ---
 
 We are an active, friendly community of data scientists based in Toronto. Trying to utilize Machine Learning techniques to solve real-world problems. 
