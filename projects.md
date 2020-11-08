@@ -1,10 +1,10 @@
 ---
-bg: "tag.jpg"
+bg: "motor.jpg"
 layout: page
-title: "Projects"
+title: "Проекты"
 crawlertitle: "Projects we have done"
 permalink: /projects/
-summary: "Projects dones in Our community"
+summary: "Выполненные проекты"
 active: projects
 ---
 
