@@ -7,6 +7,7 @@ date:   2020-11-19 23:09:47 +0700
 categories: posts
 tags: 'DataErudite'
 author: Felipe
+\{\% for post in site.posts reversed \%\}
 
 ---
 
