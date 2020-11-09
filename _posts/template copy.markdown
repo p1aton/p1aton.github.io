@@ -1,18 +1,21 @@
 ---
 layout: post
-tags: [beginner]
+tags: 'Info'
 title:  "Creating a simple game in RenPy"
+crawlertitle: "This is our first post"
 preview: 
   file: renpy.png
   width: 220
   height: 150
-date:   2015-03-28 14:14:01
+date:   2017-05-19 23:09:47 +0700
 curlang: en
 linkadd: ../
 picdir: ../pic/tutorials/renpy/OneMangaDay-
 markdown: True
 needHighLight: True
+summary: "Welcome post"
 ---
+
 
 Visual novels creating is not such a difficult thing, as it might seem. And RenPy engine will help us: [http://renpy.org](http://renpy.org){:target="_blank"}. On the one hand, the engine is simple and understandable even for beginners. On the other hand, the engine is quite powerful and allows you to create really cool games. You need to download engine and install it. Nothing complicated in this process is not present, the default settings are good. Here is the RenPy main window:
 
