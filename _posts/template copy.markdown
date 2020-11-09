@@ -3,16 +3,8 @@ layout: post
 tags: 'Info'
 title:  "Creating a simple game in RenPy"
 crawlertitle: "This is our first post"
-preview: 
-  file: renpy.png
-  width: 220
-  height: 150
 date:   2017-05-19 23:09:47 +0700
-curlang: en
-linkadd: ../
-picdir: ../pic/tutorials/renpy/OneMangaDay-
-markdown: True
-needHighLight: True
+categories: posts
 summary: "Welcome post"
 ---
 
