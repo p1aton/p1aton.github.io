@@ -20,7 +20,7 @@ disqus_username:
 
 # Build settings
 markdown: kramdown
-relative_permalinks: true
+#relative_permalinks: true
 permalink: /:categories/:title/
 
 # Posts settings
