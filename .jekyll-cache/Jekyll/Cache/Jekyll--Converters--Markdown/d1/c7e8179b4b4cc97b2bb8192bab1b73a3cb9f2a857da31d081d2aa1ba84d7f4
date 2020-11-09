@@ -1,8 +1,8 @@
-I"<p>The goal of this meetup was to setup a specch recognizer to answer queries from the <a href="https://tech.instacart.com/3-million-instacart-orders-open-sourced-d40d29ead6f2">InstaKart dataset</a>. We divide the 
+I"3<p>The goal of this meetup was to setup a specch recognizer to answer queries from the <a href="https://tech.instacart.com/3-million-instacart-orders-open-sourced-d40d29ead6f2">InstaKart dataset</a>. We divide the 
 problem into 3 parts, of which we have achieved only the first two.</p>
 
 <center>
-<img src="/assets/images/03-06-2017/photo_1.jpg" alt="" /> 
+<img src="/dataerudite.github.io/assets/images/03-06-2017/photo_1.jpg" alt="" /> 
 </center>
 
 <ol>
