@@ -1,11 +1,12 @@
 ---
 layout: post
-tags: 'Info'
-title:  "Creating a simple game in RenPy"
+title:  "Welcome Привет!"
 crawlertitle: "This is our first post"
-date:   2017-05-19 23:09:47 +0700
-categories: posts
 summary: "Welcome post"
+date:   2020-09-19 23:09:47 +0700
+categories: posts
+tags: 'Info'
+author: Felipe
 ---
 
 
