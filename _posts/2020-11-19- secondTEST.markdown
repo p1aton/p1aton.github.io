@@ -3,9 +3,9 @@ layout: post
 title:  "Test2"
 crawlertitle: "This is our first post"
 summary: "Welcome post"
-date:   2020-05-19 23:09:47 +0700
+date:   2020-11-19 23:09:47 +0700
 categories: posts
-tags: 'Data'
+tags: 'DataErudite'
 author: Felipe
 
 ---
