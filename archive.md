@@ -1,5 +1,5 @@
 ---
-bg: "tag.jpg"
+bg: "style-guide.jpg"
 layout: page
 #permalink: /posts/
 title: "Archive"
