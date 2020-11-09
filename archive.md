@@ -2,9 +2,9 @@
 bg: "style-guide.jpg"
 layout: page
 permalink: /posts/
-title: "Архив"
+title: "Archive"
 crawlertitle: "All articles"
-summary: "Архив всех публикаций"
+summary: "Posts about Machine Learning"
 active: archive
 ---
 
