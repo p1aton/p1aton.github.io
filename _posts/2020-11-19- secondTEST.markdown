@@ -7,6 +7,8 @@ date:   2020-05-19 23:09:47 +0700
 categories: posts
 tags: 'Data'
 author: Felipe
+
+\{\% for post in site.posts reversed \%\}
 ---
 
 We are glad that you are here. Since April 2015 our group has been exploring Data Science techniques, and by meeting regularly we have had an impact in the Toronto Data Science community. Now you can be part of this community as well. Join us on our [MeetUp page](https://www.meetup.com/Toronto-Machine-Learning-Book-Club/) and come back here often to find about our latest activities and posts from our members.
