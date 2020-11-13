@@ -136,7 +136,7 @@ git stash apply
 git stash drop
 {% endhighlight %}
 
-<a href='https://ru.stackoverflow.com/a/153503/181472'>Подробнее про использование stash.</a> 
+https://regexr.com/5g233
 
 После этого восстановить изменения всё ещё можно, но сложнее: <a href='https://stackoverflow.com/q/89332/2790048'>How to recover a dropped stash in Git?</a> ?
 
