@@ -8,35 +8,35 @@ summary: "Словарь веб-аналитика"
 active: projects
 ---
 
->  A
+#  A
 
 Describe Item 1
 
->  B
+#  B
 
 Describe Item 2
 
->  C
+#  C
 
 Describe Item 2
 
->  D
+#  D
 
 Describe Item 2
 
->  E
+#  E
 
 Describe Item 2
 
->  F
+#  F
 
 Describe Item 2
 
-#  <G> 
+#  G 
 
 Describe Item 2
 
-#  <H>
+#  H
 
 Describe Item 2
 
