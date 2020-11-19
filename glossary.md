@@ -1,10 +1,10 @@
 ---
 bg: "motor.jpg"
 layout: page
-title: "Проекты"
+title: "Глоссарий"
 crawlertitle: "Projects we have done"
 permalink: /projects/
-summary: "Выполненные проекты"
+summary: "Словарь веб-аналитика"
 active: projects
 ---
 
