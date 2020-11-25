@@ -10,7 +10,7 @@ tags: ['Дата аналитика']
 ---
 
 
-[Все команды Linux] (http://zabrosov.ru/)
+[Все команды Linux](http://zabrosov.ru/)
 
 
 
