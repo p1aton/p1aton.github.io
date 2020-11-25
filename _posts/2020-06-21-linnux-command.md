@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Настройка Ubuntu"
-crawlertitle: "This is our first post"
-summary: "Изучаем git"
+title:  "Основные команды Linux"
+crawlertitle: "Основные базовые команды Linux"
+summary: "Команды Linux"
 date:   2020-06-22 23:09:47 +0700
 categories: posts
 tags: ['Дата аналитика']
