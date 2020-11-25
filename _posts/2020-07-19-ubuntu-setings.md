@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Настройка Ubuntu"
-crawlertitle: "This is our first post"
+crawlertitle: "Базовая настройка Ubuntu"
 summary: "Настраиваем Ubuntu"
 date:   2020-06-22 23:09:47 +0700
 categories: posts
