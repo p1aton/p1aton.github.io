@@ -130,3 +130,15 @@ git config --list
 
 --->
 
+<!---
+
+ssh
+
+git remote -v
+git remote set-url origin git@github.com:p1aton/p1aton.github.io.git
+git remote -v
+git push
+
+--->
+
+
