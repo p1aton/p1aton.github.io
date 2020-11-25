@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Как вернуться к раннему коммиту?"
+title:  "Настройка Ubuntu"
 crawlertitle: "This is our first post"
 summary: "Изучаем git"
 date:   2020-06-22 23:09:47 +0700
@@ -10,6 +10,156 @@ tags: ['Дата аналитика']
 ---
 
 
+# Установка Snapy
+
+Snap-пакет — это пакет, который помимо готовой сборки самого приложения, включает в себя все необходимые зависимости и может работать (почти) в любом дистрибутиве Linux.
+
+% highlight python %}
+sudo apt update
+sudo apt install snapd
+{% endhighlight %}
+
+# Смена сочетания клавиш через утилиту Gnome Tweaks
+
+{% highlight python %}
+sudo apt install gnome-tweaks
+{% endhighlight %}
+
+Запустите утилиту Gnome Tweaks. Запустить можно из Лаунчера (иконка "Доп. настрой...").
+
+Выберите вкладку Клавиатура и мышь и нажмите кнопку Дополнительные параметры раскладки.
+
+Откроется окно с разворачивающимся списком настроек комбинаций клавиш. Найдите пункт Переключение на другую раскладку. 
+Установите галочку напротив сочетания, которое вы хотите использовать для переключение раскладки клавиатуры.
+
+# Установка пакетов
+
+## Skype
+{% highlight python %}
+sudo snap install skype --classic
+{% endhighlight %}
+
+## Spotify
+{% highlight python %}
+sudo snap install spotify
+{% endhighlight %}
+
+## VLC
+{% highlight python %}
+sudo snap install vlc
+{% endhighlight %}
+
+## Krita
+{% highlight python %}
+sudo snap install krita
+{% endhighlight %}
+
+## Pycharm CE
+{% highlight python %}
+sudo snap install pycharm-community --classic
+{% endhighlight %}
+
+## Gimp
+{% highlight python %}
+udo snap install gimp
+{% endhighlight %}
+
+## Gitkraken
+{% highlight python %}
+sudo snap install gitkraken --classic
+{% endhighlight %}
+
+## Android-studio
+{% highlight python %}
+sudo snap install android-studio --classic
+{% endhighlight %}
+
+## Inkscape
+{% highlight python %}
+sudo snap install inkscape
+{% endhighlight %}
+
+## Sublime-text 
+{% highlight python %}
+sudo snap install sublime-text --classic
+{% endhighlight %}
+
+## Audacity
+{% highlight python %}
+sudo snap install audacity
+{% endhighlight %}
+
+## Postman
+{% highlight python %}
+sudo snap install postman
+{% endhighlight %}
+
+## Opera
+{% highlight python %}
+sudo snap install opera
+{% endhighlight %}
+
+## Telegram-desktop
+{% highlight python %}
+sudo snap install telegram-desktop
+{% endhighlight %}
+
+## Shotcut 
+{% highlight python %}
+sudo snap install shotcut --classic
+{% endhighlight %}
+
+## Chromium
+{% highlight python %}
+sudo snap install chromium
+{% endhighlight %}
+
+## Darktable
+{% highlight python %}
+sudo snap install darktable
+{% endhighlight %}
+
+## Zenkit
+{% highlight python %}
+sudo snap install zenkit
+{% endhighlight %}
+
+## Brave
+{% highlight python %}
+sudo snap install brave
+{% endhighlight %}
+
+## Electrum
+{% highlight python %}
+sudo snap install electrum
+{% endhighlight %}
+
+## Termius-app
+{% highlight python %}
+sudo snap install termius-app
+{% endhighlight %}
+
+## Miro 
+{% highlight python %}
+sudo snap install miro --edge
+{% endhighlight %}
+
+## Evernote
+{% highlight python %}
+sudo snap install evernote-web-client
+{% endhighlight %}
+
+## Slack
+{% highlight python %}
+sudo snap install slack --classic
+{% endhighlight %}
+
+
+
+
+
+
+<!---
 Независимо от того, случайно ли вы зафиксировали изменения или просто поняли, что ваш предыдущий зафиксированный код - это не то, что вам нужно, часто вам потребуется отменить предыдущий коммит в Git. В этой статье рассмотрим несколько способов отменить ваши коммиты, в зависимости от вашего варианта использования.
 
 1. Что значит вернуться или откатиться: просто посмотреть, изменить содержимое рабочей области, изменить историю Git?
@@ -261,3 +411,4 @@ git commit -m'детальное описание, что и почему сде
 
 <b>Восстановление:</b> Если revert-коммит оказался ошибочным, <a href='https://ru.stackoverflow.com/a/433111/181472'>используйте этот ответ</a>.
 
+--->
