@@ -10,9 +10,7 @@ tags: ['Дата аналитика']
 ---
 
 
-**pwd** вывести текущую директорию (print working directory)
-
-**ls** вывести содержимое директории (list directory content)
+Все команды Linux[http://zabrosov.ru/]
 
 
 
