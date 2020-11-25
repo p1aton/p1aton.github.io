@@ -95,3 +95,38 @@ git add .    --- работает только в текущей директо�
 git commit -m "[descriptive_message]"   --- записать изменения с заданным сообщением
 {% endhighlight %}
 
+
+
+<!---
+
+sudo apt-get install git
+
+git --version
+
+Вы увидите сообщение:
+
+{% highlight python %}
+git version 2.29.2.windows.2
+{% endhighlight %}
+
+{% highlight python %}
+git config --global user.name "Analitik Datascientistov"
+# вводите своё имя или ник латиницей и в кавычках
+{% endhighlight %}
+
+
+{% highlight python %}
+git config --global user.email analitikds@yandex.com
+# здесь нужно ввести свой реальный e-mail
+{% endhighlight %}
+
+роверьте, что получилось: выполните команду git config с опцией --list (англ. list,
+«список»):
+
+{% highlight python %}
+git config --list
+# вывели в окно командной строки список всех свойств конфига
+{% endhighlight %}
+
+--->
+
