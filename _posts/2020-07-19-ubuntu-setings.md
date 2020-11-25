@@ -14,7 +14,7 @@ tags: ['Дата аналитика']
 
 Snap-пакет — это пакет, который помимо готовой сборки самого приложения, включает в себя все необходимые зависимости и может работать (почти) в любом дистрибутиве Linux.
 
-% highlight python %}
+{% highlight python %}
 sudo apt update
 sudo apt install snapd
 {% endhighlight %}

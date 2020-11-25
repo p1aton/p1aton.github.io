@@ -1,0 +1,117 @@
+I"�"<h1 id="установка-snapy">Установка Snapy</h1>
+
+<p>Snap-пакет — это пакет, который помимо готовой сборки самого приложения, включает в себя все необходимые зависимости и может работать (почти) в любом дистрибутиве Linux.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">apt</span> <span class="n">update</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">snapd</span></code></pre></figure>
+
+<h1 id="смена-сочетания-клавиш-через-утилиту-gnome-tweaks">Смена сочетания клавиш через утилиту Gnome Tweaks</h1>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">gnome</span><span class="o">-</span><span class="n">tweaks</span></code></pre></figure>
+
+<p>Запустите утилиту Gnome Tweaks. Запустить можно из Лаунчера (иконка “Доп. настрой…”).</p>
+
+<p>Выберите вкладку Клавиатура и мышь и нажмите кнопку Дополнительные параметры раскладки.</p>
+
+<p>Откроется окно с разворачивающимся списком настроек комбинаций клавиш. Найдите пункт Переключение на другую раскладку. 
+Установите галочку напротив сочетания, которое вы хотите использовать для переключение раскладки клавиатуры.</p>
+
+<h1 id="установка-пакетов">Установка пакетов</h1>
+
+<h2 id="skype">Skype</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">skype</span> <span class="o">--</span><span class="n">classic</span></code></pre></figure>
+
+<h2 id="spotify">Spotify</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">spotify</span></code></pre></figure>
+
+<h2 id="vlc">VLC</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">vlc</span></code></pre></figure>
+
+<h2 id="krita">Krita</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">krita</span></code></pre></figure>
+
+<h2 id="pycharm-ce">Pycharm CE</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">pycharm</span><span class="o">-</span><span class="n">community</span> <span class="o">--</span><span class="n">classic</span></code></pre></figure>
+
+<h2 id="gimp">Gimp</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">udo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">gimp</span></code></pre></figure>
+
+<h2 id="gitkraken">Gitkraken</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">gitkraken</span> <span class="o">--</span><span class="n">classic</span></code></pre></figure>
+
+<h2 id="android-studio">Android-studio</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">android</span><span class="o">-</span><span class="n">studio</span> <span class="o">--</span><span class="n">classic</span></code></pre></figure>
+
+<h2 id="inkscape">Inkscape</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">inkscape</span></code></pre></figure>
+
+<h2 id="sublime-text">Sublime-text</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">sublime</span><span class="o">-</span><span class="n">text</span> <span class="o">--</span><span class="n">classic</span></code></pre></figure>
+
+<h2 id="audacity">Audacity</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">audacity</span></code></pre></figure>
+
+<h2 id="postman">Postman</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">postman</span></code></pre></figure>
+
+<h2 id="opera">Opera</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">opera</span></code></pre></figure>
+
+<h2 id="telegram-desktop">Telegram-desktop</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">telegram</span><span class="o">-</span><span class="n">desktop</span></code></pre></figure>
+
+<h2 id="shotcut">Shotcut</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">shotcut</span> <span class="o">--</span><span class="n">classic</span></code></pre></figure>
+
+<h2 id="chromium">Chromium</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">chromium</span></code></pre></figure>
+
+<h2 id="darktable">Darktable</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">darktable</span></code></pre></figure>
+
+<h2 id="zenkit">Zenkit</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">zenkit</span></code></pre></figure>
+
+<h2 id="brave">Brave</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">brave</span></code></pre></figure>
+
+<h2 id="electrum">Electrum</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">electrum</span></code></pre></figure>
+
+<h2 id="termius-app">Termius-app</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">termius</span><span class="o">-</span><span class="n">app</span></code></pre></figure>
+
+<h2 id="miro">Miro</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">miro</span> <span class="o">--</span><span class="n">edge</span></code></pre></figure>
+
+<h2 id="evernote">Evernote</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">evernote</span><span class="o">-</span><span class="n">web</span><span class="o">-</span><span class="n">client</span></code></pre></figure>
+
+<h2 id="slack">Slack</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">slack</span> <span class="o">--</span><span class="n">classic</span></code></pre></figure>
+
+:ET

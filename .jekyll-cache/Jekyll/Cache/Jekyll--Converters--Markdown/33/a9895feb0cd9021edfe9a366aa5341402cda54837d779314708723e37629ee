@@ -1,0 +1,369 @@
+I"q<h1 id="установка-snapy">Установка Snapy</h1>
+
+<p>Snap-пакет — это пакет, который помимо готовой сборки самого приложения, включает в себя все необходимые зависимости и может работать (почти) в любом дистрибутиве Linux.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">apt</span> <span class="n">update</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">snapd</span></code></pre></figure>
+
+<h1 id="смена-сочетания-клавиш-через-утилиту-gnome-tweaks">Смена сочетания клавиш через утилиту Gnome Tweaks</h1>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">gnome</span><span class="o">-</span><span class="n">tweaks</span></code></pre></figure>
+
+<p>Запустите утилиту Gnome Tweaks. Запустить можно из Лаунчера (иконка “Доп. настрой…”).</p>
+
+<p>Выберите вкладку Клавиатура и мышь и нажмите кнопку Дополнительные параметры раскладки.</p>
+
+<p>Откроется окно с разворачивающимся списком настроек комбинаций клавиш. Найдите пункт Переключение на другую раскладку. 
+Установите галочку напротив сочетания, которое вы хотите использовать для переключение раскладки клавиатуры.</p>
+
+<h1 id="установка-пакетов">Установка пакетов</h1>
+
+<h2 id="skype">Skype</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">skype</span> <span class="o">--</span><span class="n">classic</span></code></pre></figure>
+
+<h2 id="spotify">Spotify</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">spotify</span></code></pre></figure>
+
+<h2 id="vlc">VLC</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">vlc</span></code></pre></figure>
+
+<h2 id="krita">Krita</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">krita</span></code></pre></figure>
+
+<h2 id="pycharm-ce">Pycharm CE</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">pycharm</span><span class="o">-</span><span class="n">community</span> <span class="o">--</span><span class="n">classic</span></code></pre></figure>
+
+<h2 id="gimp">Gimp</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">udo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">gimp</span></code></pre></figure>
+
+<h2 id="gitkraken">Gitkraken</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">gitkraken</span> <span class="o">--</span><span class="n">classic</span></code></pre></figure>
+
+<h2 id="android-studio">Android-studio</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">android</span><span class="o">-</span><span class="n">studio</span> <span class="o">--</span><span class="n">classic</span></code></pre></figure>
+
+<h2 id="inkscape">Inkscape</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">inkscape</span></code></pre></figure>
+
+<h2 id="sublime-text">Sublime-text</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">sublime</span><span class="o">-</span><span class="n">text</span> <span class="o">--</span><span class="n">classic</span></code></pre></figure>
+
+<h2 id="audacity">Audacity</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">audacity</span></code></pre></figure>
+
+<h2 id="postman">Postman</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">postman</span></code></pre></figure>
+
+<h2 id="opera">Opera</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">opera</span></code></pre></figure>
+
+<h2 id="telegram-desktop">Telegram-desktop</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">telegram</span><span class="o">-</span><span class="n">desktop</span></code></pre></figure>
+
+<h2 id="shotcut">Shotcut</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">shotcut</span> <span class="o">--</span><span class="n">classic</span></code></pre></figure>
+
+<h2 id="chromium">Chromium</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">chromium</span></code></pre></figure>
+
+<h2 id="darktable">Darktable</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">darktable</span></code></pre></figure>
+
+<h2 id="zenkit">Zenkit</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">zenkit</span></code></pre></figure>
+
+<h2 id="brave">Brave</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">brave</span></code></pre></figure>
+
+<h2 id="electrum">Electrum</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">electrum</span></code></pre></figure>
+
+<h2 id="termius-app">Termius-app</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">termius</span><span class="o">-</span><span class="n">app</span></code></pre></figure>
+
+<h2 id="miro">Miro</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">miro</span> <span class="o">--</span><span class="n">edge</span></code></pre></figure>
+
+<h2 id="evernote">Evernote</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">evernote</span><span class="o">-</span><span class="n">web</span><span class="o">-</span><span class="n">client</span></code></pre></figure>
+
+<h2 id="slack">Slack</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">sudo</span> <span class="n">snap</span> <span class="n">install</span> <span class="n">slack</span> <span class="o">--</span><span class="n">classic</span></code></pre></figure>
+
+<!---
+Независимо от того, случайно ли вы зафиксировали изменения или просто поняли, что ваш предыдущий зафиксированный код - это не то, что вам нужно, часто вам потребуется отменить предыдущий коммит в Git. В этой статье рассмотрим несколько способов отменить ваши коммиты, в зависимости от вашего варианта использования.
+
+1. Что значит вернуться или откатиться: просто посмотреть, изменить содержимое рабочей области, изменить историю Git?
+2. Что именно откатить: рабочую область (worktree), индекс (область подготовки коммита, staging area), текущую ветку, удаленную ветку?
+3. К какой позиции откатить: к индексу, к последнему коммиту, к произвольному коммиту?
+Обозначим начальную ситуацию на следующей схеме:
+
+Обозначим начальную ситуацию на следующей схеме:
+
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">          <span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="p">(</span><span class="n">wt</span><span class="p">)</span>
+<span class="no">A</span> <span class="o">-</span> <span class="no">B</span> <span class="o">-</span> <span class="no">C</span> <span class="o">-</span> <span class="no">D</span> <span class="o">-</span> <span class="p">?</span> <span class="o">-</span> <span class="p">?</span>
+            <span class="err">↑</span>
+          <span class="n">master</span>
+          <span class="p">(</span><span class="no">HEAD</span><span class="p">)</span></code></pre></figure>
+
+
+A, B, C, D — коммиты в ветке master.
+(HEAD) — местоположение указателя HEAD.
+(i) — состояние индекса Git. Если совпадает c (HEAD) - пуст. Если нет - содержит изменения, подготовленные к следующему коммиту.
+(wt) — состояние рабочей области проекта (working tree). Если совпадает с (i) — нет неиндексированных изменений, если не совпадает — есть изменения.
+↑ обозначает коммит, на который указывает определенная ветка или указатель.
+
+Вот решения, в зависимости от задачи:
+
+#### 1. Временно переключиться на другой коммит
+
+Если вам нужно просто переключиться на другой коммит, чтобы, например, посмотреть на его содержимое, достаточно команды git checkout:
+
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">git</span> <span class="n">checkout</span> <span class="n">aaaaaa</span>
+
+ <span class="p">(</span><span class="n">wt</span><span class="p">)</span>
+ <span class="p">(</span><span class="n">i</span><span class="p">)</span>
+  <span class="no">A</span> <span class="o">-</span> <span class="no">B</span> <span class="o">-</span> <span class="no">C</span> <span class="o">-</span> <span class="no">D</span>
+  <span class="err">↑</span>           <span class="err">↑</span>
+<span class="p">(</span><span class="no">HEAD</span><span class="p">)</span>    <span class="n">master</span></code></pre></figure>
+
+
+Сейчас репозиторий находится в состоянии «detached HEAD». Чтобы переключиться обратно, используйте имя ветки (например, master):
+
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">git</span> <span class="n">checkout</span> <span class="n">master</span></code></pre></figure>
+
+
+#### 2. Переключиться на коммит и продолжить работу с него
+
+Если вы хотите продолжить работу с другого коммита, вам понадобится новая ветка. Можно переключиться и создать ее одной командой:
+
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">git</span> <span class="n">checkout</span> <span class="o">-</span><span class="n">b</span> <span class="err">имя</span><span class="o">-</span><span class="err">новой</span><span class="o">-</span><span class="err">ветки</span> <span class="n">aaaaaa</span>
+
+ <span class="p">(</span><span class="n">wt</span><span class="p">)</span>
+ <span class="p">(</span><span class="n">i</span><span class="p">)</span>
+  <span class="no">A</span> <span class="o">-</span> <span class="no">B</span> <span class="o">-</span> <span class="no">C</span> <span class="o">-</span> <span class="no">D</span>
+  <span class="err">↑</span>           <span class="err">↑</span>
+ <span class="n">new</span>       <span class="n">master</span>
+<span class="p">(</span><span class="no">HEAD</span><span class="p">)</span></code></pre></figure>
+
+
+#### 3. Удалить изменения в рабочей области и вернуть ее к состоянию как при последнем коммите.
+
+Начальное состояние:
+
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">       <span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="p">(</span><span class="n">wt</span><span class="p">)</span>
+<span class="no">A</span> <span class="o">-</span> <span class="no">B</span> <span class="o">-</span> <span class="no">C</span> <span class="o">-</span> <span class="no">D</span> <span class="o">-</span> <span class="p">?</span> <span class="o">-</span> <span class="p">?</span>
+            <span class="err">↑</span>
+          <span class="n">master</span>
+          <span class="p">(</span><span class="no">HEAD</span><span class="p">)</span></code></pre></figure>
+
+
+#### 3.1 Безопасно — с помощью кармана (stash)
+
+#### 3.1.1 Только неиндексированные
+
+Можно удалить прикарманить только те изменения, которые еще не были индексированы (командой add):
+
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">git</span> <span class="n">stash</span> <span class="n">save</span> <span class="o">--</span><span class="n">keep</span><span class="o">-</span><span class="n">index</span></code></pre></figure>
+
+
+Конечное состояние:
+
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"> <span class="p">(</span><span class="n">wt</span><span class="p">)</span>
+               <span class="p">(</span><span class="n">i</span><span class="p">)</span>       
+<span class="no">A</span> <span class="o">-</span> <span class="no">B</span> <span class="o">-</span> <span class="no">C</span> <span class="o">-</span> <span class="no">D</span> <span class="o">-</span> <span class="p">?</span>         <span class="p">?</span>
+            <span class="err">↑</span>             <span class="err">↑</span>
+          <span class="n">master</span>      <span class="n">stash</span><span class="p">{</span><span class="mi">0</span><span class="p">}</span>
+          <span class="p">(</span><span class="no">HEAD</span><span class="p">)</span></code></pre></figure>
+
+
+#### 3.1.2 Индексированные и нет
+
+Эта команда отменяет все индексированные и неиндексированные изменения в рабочей области, сохраняя их в карман (stash).
+
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">git</span> <span class="n">stash</span> <span class="n">save</span></code></pre></figure>
+
+
+Конечное состояние:
+
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">  <span class="p">(</span><span class="n">wt</span><span class="p">)</span>
+           <span class="p">(</span><span class="n">i</span><span class="p">)</span>           
+<span class="no">A</span> <span class="o">-</span> <span class="no">B</span> <span class="o">-</span> <span class="no">C</span> <span class="o">-</span> <span class="no">D</span>             <span class="p">?</span>
+            <span class="err">↑</span>             <span class="err">↑</span>
+          <span class="n">master</span>      <span class="n">stash</span><span class="p">{</span><span class="mi">0</span><span class="p">}</span>
+          <span class="p">(</span><span class="no">HEAD</span><span class="p">)</span></code></pre></figure>
+
+
+Восстановление несохраненных изменений: легко и просто.
+
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">git</span> <span class="n">stash</span> <span class="n">apply</span></code></pre></figure>
+
+
+Если stash совсем не нужен, его можно удалить.
+
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># удалить последнюю запись кармана</span>
+<span class="n">git</span> <span class="n">stash</span> <span class="n">drop</span></code></pre></figure>
+
+
+https://regexr.com/5g233
+
+После этого восстановить изменения всё ещё можно, но сложнее: <a href='https://stackoverflow.com/q/89332/2790048'>How to recover a dropped stash in Git?</a> ?
+
+#### 3.2 Опасный способ
+
+<b>Осторожно!</b> Эта команда безвозвратно удаляет несохраненные текущие изменения из рабочей области и из индекса Если они вам все-таки нужны, воспользуйтесь git stash.
+
+Восстановление несохраненных изменений: неиндексированные потеряны полностью, но <a href='https://ru.stackoverflow.com/a/424384/181472'>вы можете восстановить то, что было проиндексировано</a>.
+
+Здесь мы будем использовать git reset --hard
+
+Выполняем:
+
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">git</span> <span class="n">reset</span> <span class="o">--</span><span class="n">hard</span> <span class="no">HEAD</span></code></pre></figure>
+
+
+Конечное состояние:
+
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">      <span class="p">(</span><span class="n">wt</span><span class="p">)</span>
+           <span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="no">A</span> <span class="o">-</span> <span class="no">B</span> <span class="o">-</span> <span class="no">C</span> <span class="o">-</span> <span class="no">D</span> <span class="o">-</span> <span class="err">х</span> <span class="o">-</span> <span class="err">х</span>
+            <span class="err">↑</span>
+          <span class="n">master</span>
+          <span class="p">(</span><span class="no">HEAD</span><span class="p">)</span></code></pre></figure>
+
+
+#### 4. Перейти к более раннему коммиту в текущей ветке и удалить из нее все последующие (неопубликованные)
+
+<b>Осторожно!</b>Эта команда переписывает историю Git-репозитория. Если вы уже опубликовали <a href='https://ru.stackoverflow.com/tags/git-push/info'>(git push) </a>свои изменения, то этот способ использовать нельзя <a href='https://ru.stackoverflow.com/questions/429512/'>(см. почему)</a>. Используйте вариант из пункта 5 <a href='https://ru.stackoverflow.com/tags/git-revert/info'>(git revert)</a>.
+
+#### 4.1 При этом сохранить изменения в индекс репозитория:
+
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">git</span> <span class="n">reset</span> <span class="o">--</span><span class="n">soft</span> <span class="n">bbbbbb</span></code></pre></figure>
+
+
+После этого индекс репозитория будет содержать все изменения от cccccc до dddddd. Теперь вы можете сделать новый коммит (или несколько) на основе этих изменений.
+
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">           <span class="p">(</span><span class="n">wt</span><span class="p">)</span>
+           <span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="no">A</span> <span class="o">-</span> <span class="no">B</span> <span class="o">-</span> <span class="no">C</span> <span class="o">-</span> <span class="no">D</span> 
+    <span class="err">↑</span>
+  <span class="n">master</span>
+  <span class="p">(</span><span class="no">HEAD</span><span class="p">)</span></code></pre></figure>
+
+
+#### 4.2 Сохранить изменения в рабочей области, но не в индексе.
+
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">git</span> <span class="n">reset</span> <span class="n">bbbbbb</span></code></pre></figure>
+
+
+Эта команда просто перемещает указатель ветки, но не отражает изменения в индексе (он будет пустым).
+
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"> <span class="p">(</span><span class="n">i</span><span class="p">)</span>     <span class="p">(</span><span class="n">wt</span><span class="p">)</span>
+<span class="no">A</span> <span class="o">-</span> <span class="no">B</span> <span class="o">-</span> <span class="no">C</span> <span class="o">-</span> <span class="no">D</span> 
+    <span class="err">↑</span>
+  <span class="n">master</span>
+  <span class="p">(</span><span class="no">HEAD</span><span class="p">)</span></code></pre></figure>
+
+
+#### 4.3 Просто выбросить изменения.
+
+<b>Осторожно!</b> Эта команда безвозвратно удаляет несохраненные текущие изменения. Если удаляемые коммиты не принадлежат никакой другой ветке, то они тоже будут потеряны.
+
+<b>Восстановление коммитов:</b> Используйте <a href='https://ru.stackoverflow.com/tags/git-reflog/info'>git reflog</a> и <a href='https://ru.stackoverflow.com/questions/232455/'>этот вопрос</a>этот вопрос чтобы найти и восстановить коммиты; иначе сборщик мусора удалит их безвозвратно через некоторое время.
+
+Восстановление несохраненных изменений: неиндексированные потеряны полностью, но <a href='https://ru.stackoverflow.com/a/424384/181472'>вы можете восстановить то, что было проиндексировано</a>вы можете восстановить то, что было проиндексировано.
+
+Начальное состояние:
+
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">   <span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="p">(</span><span class="n">wt</span><span class="p">)</span>
+<span class="no">A</span> <span class="o">-</span> <span class="no">B</span> <span class="o">-</span> <span class="no">C</span> <span class="o">-</span> <span class="no">D</span> <span class="o">-</span> <span class="p">?</span> <span class="o">-</span>  <span class="p">?</span>
+            <span class="err">↑</span>
+          <span class="n">master</span>
+          <span class="p">(</span><span class="no">HEAD</span><span class="p">)</span></code></pre></figure>
+
+
+Выполняем:
+
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">git</span> <span class="n">reset</span> <span class="o">--</span><span class="n">hard</span> <span class="n">bbbbbb</span></code></pre></figure>
+
+
+Конечное состояние:
+
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"> <span class="p">(</span><span class="n">wt</span><span class="p">)</span>
+   <span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="no">A</span> <span class="o">-</span> <span class="no">B</span> <span class="o">-</span> <span class="no">C</span> <span class="o">-</span> <span class="no">D</span> <span class="o">-</span> <span class="err">х</span> <span class="o">-</span> <span class="err">х</span>
+    <span class="err">↑</span>
+  <span class="n">master</span>
+  <span class="p">(</span><span class="no">HEAD</span><span class="p">)</span></code></pre></figure>
+
+
+#### 
+
+5. Отменить уже опубликованные коммиты с помощью новых коммитов
+Воспользуйтесь командой <a href='https://ru.stackoverflow.com/tags/git-revert/info'>git revert</a>. Она создает новые коммиты, по одному на каждый отменяемый коммит. Таким образом, если нужно отменить все коммиты после aaaaaa:
+
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"> <span class="c1"># можно перечислить отменяемые коммиты</span>
+<span class="n">git</span> <span class="n">revert</span> <span class="n">bbbbbb</span> <span class="n">cccccc</span> <span class="n">dddddd</span>
+
+<span class="c1"># можно задать диапазон от более раннего к более позднему (новому)</span>
+<span class="n">git</span> <span class="n">revert</span> <span class="n">bbbbbb</span><span class="o">..</span><span class="n">dddddd</span>
+
+<span class="c1"># либо в относительных ссылках</span>
+<span class="n">git</span> <span class="n">revert</span> <span class="no">HEAD</span><span class="o">~</span><span class="mi">2</span><span class="o">..</span><span class="no">HEAD</span>
+
+<span class="c1"># можно отменить коммит слияния, указывая явным образом номер предка (в нашем примере таких нет):</span>
+<span class="n">git</span> <span class="n">revert</span> <span class="o">-</span><span class="n">m</span> <span class="mi">1</span> <span class="n">abcdef</span>
+
+<span class="c1"># после этого подтвердите изменения:</span>
+<span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span><span class="s1">'детальное описание, что и почему сделано'</span></code></pre></figure>
+
+
+<b>Восстановление:</b> Если revert-коммит оказался ошибочным, <a href='https://ru.stackoverflow.com/a/433111/181472'>используйте этот ответ</a>.
+
+--->
+:ET
