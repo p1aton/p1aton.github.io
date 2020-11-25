@@ -48,6 +48,9 @@ sudo apt install gnome-tweaks
  
   
  
+  
+ 
+ 
 
 # Установка дополнительных пакетов
 
