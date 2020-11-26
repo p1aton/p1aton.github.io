@@ -12,7 +12,7 @@ tags: ['Дата аналитика']
 
 # 1 Основные команды
 
-`
+{% highlight python %}
 \# ls -lash /home                     # Просмотр содержимого католога
 \# pwd                                # Путь к текущему каталогу
 \# su -                               # стать root + его переменные окружения 
@@ -41,7 +41,7 @@ tags: ['Дата аналитика']
 \# set | grep $USER                   # Список переменных окружения
 
 \# openssl md5 index.htm.bak          # Делаем md5 hash файла
-`
+{% endhighlight %}
 
 
 [Все команды Linux](http://zabrosov.ru/)
