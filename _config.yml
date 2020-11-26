@@ -43,4 +43,6 @@ sass:
 
 images: '/assets/images'
 
+highlighter: rouge
+
 

@@ -11,7 +11,7 @@ tags: ['Дата аналитика']
 
 
 
-{% highlight python %}
+`​``javascript
 \# ls -lash /home                     # Просмотр содержимого католога
 \# pwd                                # Путь к текущему каталогу
 \# su -                               # стать root + его переменные окружения 
@@ -41,7 +41,7 @@ tags: ['Дата аналитика']
 
 \# openssl md5 index.htm.bak          # Делаем md5 hash файла
 {% endhighlight %}
-
+```
 
 [Все команды Linux](http://zabrosov.ru/)
 
