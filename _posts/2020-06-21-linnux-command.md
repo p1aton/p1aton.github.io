@@ -11,7 +11,7 @@ tags: ['Дата аналитика']
 
 
 
-{% highlight somelanguage %}
+{% highlight python %}
 \# ls -lash /home                     # Просмотр содержимого католога
 \# pwd                                # Путь к текущему каталогу
 \# su -                               # стать root + его переменные окружения 
