@@ -156,9 +156,7 @@ Describe Item 2
 
 {% include cmp-yes.html %}
 
-{% Whatever %}
 <iframe width="733" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiMDdlZjE5ZDctNDA4ZS00MWM1LTk0MWUtZmQ3MWZkMTM3MzljIiwidCI6IjY1Y2JhYzNjLTczNDgtNGEyMy04MWIyLThhMDAxNWM1NzIyMiIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
-{%- Whatever -%}
 
 
 
