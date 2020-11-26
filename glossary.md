@@ -154,38 +154,9 @@ Describe Item 2
 Describe Item 2
 
 
-<iframe  frameborder="no" border="0" marginwidth="0" marginheight="0" width="560" height="400" src="https://app.powerbi.com/view?r=eyJrIjoiMDdlZjE5ZDctNDA4ZS00MWM1LTk0MWUtZmQ3MWZkMTM3MzljIiwidCI6IjY1Y2JhYzNjLTczNDgtNGEyMy04MWIyLThhMDAxNWM1NzIyMiIsImMiOjl9" frameborder="0">&nbsp;
-  
-</iframe>
 
+{% include youtube.html src="https://app.powerbi.com/view?r=eyJrIjoiMDdlZjE5ZDctNDA4ZS00MWM1LTk0MWUtZmQ3MWZkMTM3MzljIiwidCI6IjY1Y2JhYzNjLTczNDgtNGEyMy04MWIyLThhMDAxNWM1NzIyMiIsImMiOjl9"%}
 
-<style>
-.videoWrapper {position: relative; padding-bottom: 56.333%; height: 0;}
-.videoWrapper iframe {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}    
-</style>
-
-<script>
-function getId(url) {
-    var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
-    var match = url.match(regExp);
-    if (match && match[2].length == 11) {
-        return match[2];
-    } else {
-        return 'error';
-    }
-}
-function yt_url2embed() {
-    var p = document.getElementsByTagName('p');
-    for(var i = 0; i < p.length; i++) {
-        var pattern = /^((http|https|ftp):\/\/)/;
-        if(pattern.test(p[i].innerHTML)) {
-            var myId = getId(p[i].innerHTML);
-            p[i].innerHTML = '<div class="videoWrapper"><iframe width="720" height="420" src="https://www.youtube.com/embed/' + myId + '?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>';
-        }
-    }
-}
-yt_url2embed();
-</script>
 
 
 
