@@ -154,8 +154,6 @@ Describe Item 2
 Describe Item 2
 
 
-<div class="video-container">
 
-<iframe width="700" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiMDdlZjE5ZDctNDA4ZS00MWM1LTk0MWUtZmQ3MWZkMTM3MzljIiwidCI6IjY1Y2JhYzNjLTczNDgtNGEyMy04MWIyLThhMDAxNWM1NzIyMiIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+<iframe class="is-fullwidth" width="700" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiMDdlZjE5ZDctNDA4ZS00MWM1LTk0MWUtZmQ3MWZkMTM3MzljIiwidCI6IjY1Y2JhYzNjLTczNDgtNGEyMy04MWIyLThhMDAxNWM1NzIyMiIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
 
-</div>
