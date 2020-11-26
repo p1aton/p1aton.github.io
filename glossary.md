@@ -155,7 +155,6 @@ Describe Item 2
 
 
 
-{% include powerbi.html %}
 
 
 
