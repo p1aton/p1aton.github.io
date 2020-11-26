@@ -45,4 +45,7 @@ images: '/assets/images'
 
 highlighter: rouge
 
+plugins:
+  - jekyll-spaceship
+
 
