@@ -159,5 +159,34 @@ Describe Item 2
 </iframe>
 
 
+<style>
+.videoWrapper {position: relative; padding-bottom: 56.333%; height: 0;}
+.videoWrapper iframe {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}    
+</style>
+
+<script>
+function getId(url) {
+    var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+    var match = url.match(regExp);
+    if (match && match[2].length == 11) {
+        return match[2];
+    } else {
+        return 'error';
+    }
+}
+function yt_url2embed() {
+    var p = document.getElementsByTagName('p');
+    for(var i = 0; i < p.length; i++) {
+        var pattern = /^((http|https|ftp):\/\/)/;
+        if(pattern.test(p[i].innerHTML)) {
+            var myId = getId(p[i].innerHTML);
+            p[i].innerHTML = '<div class="videoWrapper"><iframe width="720" height="420" src="https://www.youtube.com/embed/' + myId + '?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>';
+        }
+    }
+}
+yt_url2embed();
+</script>
+
+
 
 
