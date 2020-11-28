@@ -133,12 +133,24 @@ Ctrl+U – удалить строку
 exit – разлогиниться
 {% endhighlight %}
 
+# Специальные символы
+{% highlight r %}
+. текущая директория
+.. директория на уровень выше
+~ домашняя директория
+* любое количество любых символов
+? ровно один любой символ
+{% endhighlight %}
 
 
 
 
 
 [Все команды Linux](http://zabrosov.ru/)
+[Команды Linux: расширенный справочник команд Unix / Linux / PuTTY SSH](https://putty.org.ru/articles/unix-linux-ref.html)
+[Основные команды Linux: справочник команд Linux](https://otus.ru/nest/post/830/)
+
+
 
 
 
