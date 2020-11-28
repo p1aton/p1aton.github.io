@@ -146,9 +146,9 @@ exit – разлогиниться
 
 
 
-[Все команды Linux](http://zabrosov.ru/)
-[Команды Linux: расширенный справочник команд Unix / Linux / PuTTY SSH](https://putty.org.ru/articles/unix-linux-ref.html)
-[Основные команды Linux: справочник команд Linux](https://otus.ru/nest/post/830/)
+[Все команды Linux](http://zabrosov.ru/)  
+[Команды Linux: расширенный справочник команд Unix / Linux / PuTTY SSH](https://putty.org.ru/articles/unix-linux-ref.html)  
+[Основные команды Linux: справочник команд Linux](https://otus.ru/nest/post/830/)  
 
 
 
