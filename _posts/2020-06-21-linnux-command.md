@@ -11,36 +11,131 @@ tags: ['Дата аналитика']
 
 
 
+# Файловые команды
 {% highlight r %}
-ls -lash /home                     # Просмотр содержимого каталога
-pwd                                # Путь к текущему каталогу
-su -                               # стать root + его переменные окружения 
-cd /home                           # Переход в другой каталог
-
-touch index.htm                    # Создать новый файл
-mkdir -p /home/name/www/{tools,i}  # Создать каталог с подкаталогами
-cp www/index.htm .                 # Копируем файл в текущий каталог
-cp -la /dir1 /dir2                 # Архивирование каталога с подкаталогами
-cp -R /home/name /home/name_bak    # Копируем каталог
-cp index.htm{,.bak}                # Копируем файл с новым расширением, быстрый backup
-mv -v /home/name_bak /home/name    # Перемещение/переименование файлов и каталогов
-rm -Rf /home/name/www              # Удаление каталога со всем содержимым
-shred /home/name/www/*             # Удаление с перезаписью случайными числами 25 раз
-
-which ls                           # Полный путь имени/расположение команды
-whatis ls                          # Очень короткая справка о команде
-whereis grep                       # Путь к исполняемым файлам, исходным файлам и справочному рук-ву
-ldd /bin/grep                      # Список необходимых библиотек для работы команды
-ldconfig -n /path/to/libs/         # Добовляем путь к библиотеке(настройка динамического связывания)
-
-date [-u|--utc|--universal] [MMDDhhmm[[CC]YY][.ss]]
-date 031713402011                  # Устанавливаем дату: Чтв Мар 17 13:40:00 MSK 2011
-time ls -lash /root                # Время выполнение команды
-cal -3                             # Календарь на 3 месяца
-set | grep $USER                   # Список переменных окружения
-
-openssl md5 index.htm.bak          # Делаем md5 hash файла
+ls – список файлов и каталогов
+ls -al – форматированный список со скрытыми каталогами и файлами
+cd dir – сменить директорию на dir
+cd – сменить на домашний каталог
+pwd – показать текущий каталог
+mkdir dir – создать каталог dir
+rm file – удалить file
+rm -r dir – удалить каталог dir
+rm -f file – удалить форсированно file
+rm -rf dir – удалить форсированно каталог dir
+cp file1 file2 – скопировать file1 в file2
+cp -r dir1 dir2 – скопировать dir1 в dir2; создаст каталог dir2, если он не существует
+mv file1 file2 – переименовать или переместить file1 в file2. если file2 существующий каталог - переместить file1 в каталог file2
+ln -s file link – создать символическую ссылку link к файлу file
+touch file – создать file
+cat > file – направить стандартный ввод в file
+more file – вывести содержимое file
+head file – вывести первые 10 строк file
+tail file – вывести последние 10 строк file
+tail -f file – вывести содержимое file по мере роста, начинает с последних 10 строк
 {% endhighlight %}
+
+# Управление процессами
+{% highlight r %}
+ps – вывести ваши текущие активные процессы
+top – показать все запущенные процессы
+kill pid – убить процесс с id pid
+killall proc – убить все процессы с именем proc
+bg – список остановленных и фоновых задач; продолжить выполнение остановленной задачи в фоне
+fg – выносит на передний план последние задачи
+fg n – вынести задачу n на передний план
+Права доступа на файлы
+chmod octal file – сменить права file на octal, раздельно для пользователя, группы и для всех добавлением:
+4 – чтение (r)
+2 – запись (w)
+1 – исполнение (x)
+
+Примеры:
+chmod 777 – чтение, запись, исполнение для всех
+chmod 755 – rwx для владельца, rx для группы и остальных.
+Дополнительные опции: man chmod.
+{% endhighlight %}
+
+# SSH
+{% highlight r %}
+ssh user@host – подключится к host как user
+ssh -p port user@host – подключится к host на порт port как user
+ssh-copy-id user@host – добавить ваш ключ на host для user чтобы включить логин без пароля и по ключам
+{% endhighlight %}
+
+# Поиск
+{% highlight r %}
+grep pattern files – искать pattern в files
+grep -r pattern dir – искать рекурсивно pattern в dir
+command | grep pattern – искать pattern в выводе command
+locate file – найти все файлы с именем file
+{% endhighlight %}
+
+# Системная информация
+{% highlight r %}
+date – вывести текущую дату и время
+cal – вывести календарь на текущий месяц
+uptime – показать текущий аптайм
+w – показать пользователей онлайн
+whoami – имя, под которым вы залогинены
+finger user – показать информацию о user
+uname -a – показать информацию о ядре
+cat /proc/cpuinfo – информация ЦПУ
+cat /proc/meminfo – информация о памяти
+man command – показать мануал для command
+df – показать инф. о использовании дисков
+du – вывести “вес” текущего каталога
+free – использование памяти и swap
+whereis app – возможное расположение программы app
+which app – какая app будет запущена по умолчанию
+{% endhighlight %}
+
+# Архивация
+{% highlight r %}
+tar cf file.tar files – создать tar-архив с именем file.tar содержащий files
+tar xf file.tar – распаковать file.tar
+tar czf file.tar.gz files – создать архив tar с сжатием Gzip
+tar xzf file.tar.gz – распаковать tar с Gzip
+tar cjf file.tar.bz2 – создать архив tar с сжатием Bzip2
+tar xjf file.tar.bz2 – распаковать tar с Bzip2
+gzip file – сжать file и переименовать в file.gz
+gzip -d file.gz – разжать file.gz в file
+{% endhighlight %}
+
+# Сеть
+{% highlight r %}
+ping host – пропинговать host и вывести результат
+whois domain – получить информацию whois для domain
+dig domain – получить DNS информацию domain
+dig -x host – реверсивно искать host
+wget file – скачать file
+wget -c file – продолжить остановленную закачку
+{% endhighlight %}
+
+# Установка пакетов
+{% highlight r %}
+Установка из исходников:
+./configure
+make
+make install
+dpkg -i pkg.deb – установить пакет (Debian)
+rpm -Uvh pkg.rpm – установить пакет (RPM)
+{% endhighlight %}
+
+# Клавиатурные сочетания
+{% highlight r %}
+Ctrl+C – завершить текущую команду
+Ctrl+Z – остановить текущую команду, продолжть с fg на переднем плане или bg в фоне
+Ctrl+D – разлогиниться, тоже самое, что и exit
+Ctrl+W – удалить одно слово в текущей строке
+Ctrl+U – удалить строку
+!! - повторить последнюю команду
+exit – разлогиниться
+{% endhighlight %}
+
+
+
+
 
 
 [Все команды Linux](http://zabrosov.ru/)
