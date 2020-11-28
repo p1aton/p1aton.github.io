@@ -151,6 +151,9 @@ exit – разлогиниться
 [Основные команды Linux: справочник команд Linux](https://otus.ru/nest/post/830/)  
 
 
+[Oh My Zsh](https://ohmyz.sh/#install)
+
+
 
 
 
