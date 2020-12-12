@@ -139,6 +139,8 @@ git remote set-url origin git@github.com:p1aton/p1aton.github.io.git
 git remote -v
 git push
 
+git branch -a посмотреть все ветки
+git checkout next-js переключится на другую ветку (пример next-js )
 --->
 
 
