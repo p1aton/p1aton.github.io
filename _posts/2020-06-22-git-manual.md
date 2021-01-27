@@ -3,7 +3,7 @@ layout: post
 title:  "Мануал по работе с GIT"
 crawlertitle: "This is our first post"
 summary: "Основные команды git"
-date:   2020-06-19 23:09:47 +0700
+date:   2021-01-26 23:09:47 +0700
 categories: posts
 tags: ['Дата аналитика']
 #author: Felipe
