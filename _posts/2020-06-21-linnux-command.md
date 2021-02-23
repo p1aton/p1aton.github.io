@@ -69,6 +69,8 @@ grep pattern files – искать pattern в files
 grep -r pattern dir – искать рекурсивно pattern в dir
 command | grep pattern – искать pattern в выводе command
 locate file – найти все файлы с именем file
+find -regex ./.*\.js$ - поиск всех файлов js
+grep -E -o '5[HJK][1-9A-HJ-NP-Za-km-z]{49}' test.txt > goal.txt - поиск по регулярному выражению
 {% endhighlight %}
 
 # Системная информация
