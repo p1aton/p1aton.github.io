@@ -32,5 +32,5 @@ CTRL + / - однострочное комментирование
 
 #### Форматирование 
 
- CTRL+K & CTRL+F 
- CTRL+SHIFT+i
+ CTRL+K & CTRL+F  
+ CTRL+SHIFT+i  
