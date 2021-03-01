@@ -34,3 +34,6 @@ CTRL + / - однострочное комментирование
 
  CTRL+K & CTRL+F  
  CTRL+SHIFT+i  
+
+
+ <!-- sudo openvpn --config 'Загрузки/vpn/VPNBook.com-OpenVPN-DE4/vpnbook-de4-tcp443.ovpn' -->
