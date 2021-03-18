@@ -62,7 +62,7 @@ sudo pacman -S virtualbox linux-headers virtualbox-host-dkms virtualbox-guest-is
 
 Когда вы запустили вируальную машину с вашей системой зайдите в меню VirtualBox и смонтируйте гостевые дополнения. 
 
-![image tooltip here](/assets/insert-guest-additions-cd-windows.jpg)
+![image tooltip here](/assets/images/insert-guest-additions-cd-windows.jpg)
 
 У вас на машине появится значок диска с гостевыми дополнениями зайдите в него и найдите VBoxLinuxAdditions.run и запустите данный файл.
 
