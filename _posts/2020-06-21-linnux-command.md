@@ -33,6 +33,7 @@ more file – вывести содержимое file
 head file – вывести первые 10 строк file
 tail file – вывести последние 10 строк file
 tail -f file – вывести содержимое file по мере роста, начинает с последних 10 строк
+xdg-open ~/.vscode/extensions - открыть папку
 {% endhighlight %}
 
 # Управление процессами
