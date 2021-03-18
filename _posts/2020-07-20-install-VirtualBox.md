@@ -50,7 +50,6 @@ sudo pacman -S virtualbox linux-headers virtualbox-host-dkms virtualbox-guest-is
 Для просмотра установленных в настоящее время пакетов расширений, откройте основное VirtualBox Менеджер (главное окно программы), в меню «Файл» выберите «Настройки». В открывшемя окне перейдите во вкладку «Плагины», там вы увидите установленные в настоящее время расширения и можете удалить пакет либо добавить новый: 
 
 ![image tooltip here](/assets/images/12.jpg)
-<!-- <img src="assets/images/12.jpg"/>  -->
 
 Пакет расширений для последней версии вы сможете отыскать на страничке скачки. 
 
@@ -63,7 +62,7 @@ sudo pacman -S virtualbox linux-headers virtualbox-host-dkms virtualbox-guest-is
 
 Когда вы запустили вируальную машину с вашей системой зайдите в меню VirtualBox и смонтируйте гостевые дополнения. 
 
-<img src="assets/images/insert-guest-additions-cd-windows.jpg"/> 
+![image tooltip here](/insert-guest-additions-cd-windows.jpg)
 
 У вас на машине появится значок диска с гостевыми дополнениями зайдите в него и найдите VBoxLinuxAdditions.run и запустите данный файл.
 
