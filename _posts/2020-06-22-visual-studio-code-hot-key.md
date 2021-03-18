@@ -10,7 +10,7 @@ tags: ['Дата аналитика']
 ---
 
 
-# Горячие клавиши
+Горячие клавиши в VSCode. Набор всех доступных горячих клавиш (быстрых команд) для работы с редактором кода VSCode, которые значительно упрощают ведение разработки и написание кода.
 
 #### Комментирование
 
@@ -34,6 +34,9 @@ CTRL + / - однострочное комментирование
 
  CTRL+K & CTRL+F  
  CTRL+SHIFT+i  
+
+
+ [Расширенный справочник по горячим клавишам VSCode](https://nikomedvedev.ru/other/vscodeshortcuts/hotkeys.html)  
 
 
  <!-- sudo openvpn --config 'Загрузки/vpn/VPNBook.com-OpenVPN-DE4/vpnbook-de4-tcp443.ovpn' -->
