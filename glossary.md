@@ -1,10 +1,10 @@
 ---
 bg: "glossary.jpg"
 layout: page
-title: "Глоссарий"
+title: "Метрики"
 crawlertitle: "Projects we have done"
 permalink: /projects/
-summary: "Словарь веб-аналитика"
+summary: "Метрики диджитал-проекта"
 active: projects
 ---
 
