@@ -2,8 +2,8 @@
 layout: post
 title:  "GBQ&GA с вложенной структурой"
 crawlertitle: "This is our first post"
-summary: "VirtualBox мануал"
-date:   2020-06-29 23:09:47 +0700
+summary: "Таблицы с вложенной структурой"
+date:   2021-01-29 23:09:47 +0700
 categories: posts
 tags: ['Веб аналитика']
 #author: Felipe
