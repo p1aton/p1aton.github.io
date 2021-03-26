@@ -12,7 +12,7 @@ tags: ['Веб аналитика']
 
 Запросы для детального анализа страниц данных GA в GBQ.
 
-### 01 Pages.sql 
+### 01 Pages
 
 {% highlight sql %}
 SELECT
@@ -24,7 +24,7 @@ GROUP BY
   hits.page.pagePath
 {% endhighlight %}
 
-### 02 Pageviews.sql 
+### 02 Pageviews
 
 {% highlight sql %}
 SELECT
@@ -41,7 +41,7 @@ ORDER BY
   pageviews DESC
 {% endhighlight %}
 
-### 03 Unique Pageviews.sql 
+### 03 Unique Pageviews
 
 {% highlight sql %}
 SELECT
@@ -63,7 +63,7 @@ ORDER BY
   pageviews DESC
 {% endhighlight %}
 
-### 04 Average Time on Page.sql 
+### 04 Average Time on Page
 
 {% highlight sql %}
 SELECT
@@ -80,7 +80,7 @@ ORDER BY
   pageviews DESC
 {% endhighlight %}
 
-### 05 Exits.sql 
+### 05 Exits
 
 {% highlight sql %}
 SELECT
@@ -102,7 +102,7 @@ ORDER BY
   exits DESC
 {% endhighlight %}
 
-### 06 Total Time on Page.sql 
+### 06 Total Time on Page
 
 {% highlight sql %}
 SELECT
@@ -175,7 +175,7 @@ ORDER BY
   pageviews DESC
 {% endhighlight %}
 
-### 07 Entrances.sql 
+### 07 Entrances
 
 {% highlight sql %}
 SELECT
@@ -197,7 +197,7 @@ ORDER BY
   entrances DESC
 {% endhighlight %}
 
-### 08 Bounce Rate.sql 
+### 08 Bounce Rate
 
 {% highlight sql %}
 SELECT
@@ -223,7 +223,7 @@ FROM (
     UNNEST(GA.hits) AS hits)
 {% endhighlight %}
 
-### 09 Sessions.sql 
+### 09 Sessions
 
 {% highlight sql %}
 SELECT
@@ -247,7 +247,7 @@ FROM (
     UNNEST(GA.hits) AS hits)
 {% endhighlight %}
 
-### 10 Bounce Rate.sql 
+### 10 Bounce Rate
 
 {% highlight sql %}
 select
@@ -297,7 +297,7 @@ ORDER BY
   sessions DESC
 {% endhighlight %}
 
-### 11 Exit rate.sql 
+### 11 Exit rate
 
 {% highlight sql %}
 SELECT
