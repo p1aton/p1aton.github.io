@@ -184,3 +184,73 @@ GROUP BY
 ORDER BY
   avg_value desc
 {% endhighlight %}
+
+### 14 Actual screen progressions
+
+{% highlight sql %}
+SELECT
+  screen_0,
+  screen_1,
+  COUNT(*) AS count
+FROM (
+  SELECT
+    user_pseudo_id,
+    event_timestamp,
+    param.value.string_value AS screen_0,
+    LEAD (param.value.string_value, 1) OVER (PARTITION BY user_pseudo_id ORDER BY event_timestamp ) AS screen_1
+  FROM
+    `firebase-public-project.analytics_153293282.events_20181003`,
+    UNNEST(event_params) AS param
+  WHERE
+    event_name = "screen_view"
+    AND param.key = "firebase_screen_class"
+  ORDER BY
+    user_pseudo_id,
+    event_timestamp )
+WHERE
+  screen_1 = "shop_menu" # IS NOT NULL
+GROUP BY
+  screen_0,
+  screen_1
+ORDER BY
+  count DESC
+{% endhighlight %}
+
+### A closed funnel with time constraints
+
+Count the number of occurrences a user encountered a "start_event" event, and then the number of times
+they encountered an "end_event" event after encountering the start event within a certain time window 
+
+{% highlight sql %}
+SELECT
+  COUNTIF(funnel_start_time IS NOT NULL) AS funnel_begin_count,
+  COUNTIF(funnel_end_time - funnel_start_time < 5 * 1000 * 1000) AS funnel_end_count
+FROM (
+  SELECT
+    funnel_start_time,
+    LEAD(funnel_end_time, 1) OVER (PARTITION BY user_pseudo_id ORDER BY event_timestamp) AS funnel_end_time
+  FROM (
+    SELECT
+      event_name,
+      IF (event_name = "level_start_quickplay",
+        event_timestamp,
+        NULL) AS funnel_start_time,
+      IF (event_name = "level_end_quickplay",
+        event_timestamp,
+        NULL) AS funnel_end_time,
+      user_pseudo_id,
+      event_timestamp
+    FROM
+     `firebase-public-project.analytics_153293282.events_20181003`
+    WHERE
+      event_name = "level_start_quickplay"
+      OR event_name = "level_end_quickplay"
+#      AND _TABLE_SUFFIX BETWEEN '<yyyymmdd>'
+#      AND '<yyyymmdd>'
+    ORDER BY
+      user_pseudo_id,
+      event_timestamp) )
+{% endhighlight %}
+
+
+
