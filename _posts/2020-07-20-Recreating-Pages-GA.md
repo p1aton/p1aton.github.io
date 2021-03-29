@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "GB запросы для анализа страниц"
+title:  "GA запросы для анализа страниц"
 crawlertitle: "This is our first post"
 summary: "GA аналитика страниц"
 date:   2020-11-29 23:09:47 +0700
