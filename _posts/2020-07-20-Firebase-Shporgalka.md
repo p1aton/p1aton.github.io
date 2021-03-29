@@ -216,7 +216,7 @@ ORDER BY
   count DESC
 {% endhighlight %}
 
-### 15 A closed funnel with time constraints
+### 15 Closed funnel with time constraints
 
 Count the number of occurrences a user encountered a "start_event" event, and then the number of times
 they encountered an "end_event" event after encountering the start event within a certain time window 
@@ -251,6 +251,82 @@ FROM (
       user_pseudo_id,
       event_timestamp) )
 {% endhighlight %}
+
+
+### 16 Trio of events are leading up to a desired
+
+Make sure you replace "spend_virtual_currency" down near the bottom there with the actual 
+event you're trying to target
+
+{% highlight sql %}
+SELECT
+  s0,
+  s1,
+  s2,
+  COUNT(*) AS count
+FROM (
+  SELECT
+    user_pseudo_id,
+    event_timestamp,
+    event_name AS s0,
+    LEAD (event_name, 1) OVER (PARTITION BY user_pseudo_id ORDER BY event_timestamp) AS s1,
+    LEAD (event_name, 2) OVER (PARTITION BY user_pseudo_id ORDER BY event_timestamp) AS s2
+  FROM
+    `firebase-public-project.analytics_153293282.events_20181003`
+  ORDER BY
+    user_pseudo_id,
+    event_timestamp )
+WHERE
+  s2 = "level_end_quickplay"
+GROUP BY
+  s0,
+  s1,
+  s2
+ORDER BY
+  count DESC
+{% endhighlight %}
+
+### Common screen patterns
+
+Using the new "screen_view" event being tracked by Google Analytics for Firebase, can we figure out what the most
+common triplets of "screen progressions" are through our app?
+
+{% highlight sql %}
+SELECT
+  screen_0,
+  screen_1,
+  screen_2,
+  COUNT(*) AS count
+FROM (
+  SELECT
+    user_pseudo_id,
+    event_timestamp,
+    param.value.string_value AS screen_0,
+    LEAD (param.value.string_value, 1) OVER (PARTITION BY user_pseudo_id ORDER BY event_timestamp ) AS screen_1,
+    LEAD (param.value.string_value, 2) OVER (PARTITION BY user_pseudo_id ORDER BY event_timestamp ) AS screen_2
+  FROM
+    `firebase-public-project.analytics_153293282.events_20181003`,
+    UNNEST(event_params) AS param
+  WHERE
+    event_name = "screen_view"
+    AND param.key = "firebase_screen_class"
+  ORDER BY
+    user_pseudo_id,
+    event_timestamp )
+WHERE
+  screen_1 IS NOT NULL
+  AND screen_2 IS NOT NULL
+GROUP BY
+  screen_0,
+  screen_1,
+  screen_2
+ORDER BY
+  count DESC
+{% endhighlight %}
+
+
+
+
 
 
 
