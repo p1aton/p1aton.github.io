@@ -216,7 +216,7 @@ ORDER BY
   count DESC
 {% endhighlight %}
 
-### A closed funnel with time constraints
+### 15 A closed funnel with time constraints
 
 Count the number of occurrences a user encountered a "start_event" event, and then the number of times
 they encountered an "end_event" event after encountering the start event within a certain time window 
