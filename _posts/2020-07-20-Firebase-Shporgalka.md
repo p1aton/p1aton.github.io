@@ -286,7 +286,7 @@ ORDER BY
   count DESC
 {% endhighlight %}
 
-### Common screen patterns
+### 17 Common screen patterns
 
 Using the new "screen_view" event being tracked by Google Analytics for Firebase, can we figure out what the most
 common triplets of "screen progressions" are through our app?
