@@ -2,7 +2,7 @@
 layout: post
 title:  "Pandas CheatSheet"
 crawlertitle: "This is our first post"
-summary: "Firebase шпаргалка"
+summary: "Pandas шпаргалка"
 date:   2020-09-09 23:09:47 +0700
 categories: posts
 tags: ['Продуктовая аналитика']
