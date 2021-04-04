@@ -5,7 +5,7 @@ crawlertitle: "This is our first post"
 summary: "GA аналитика страниц"
 date:   2020-11-29 23:09:47 +0700
 categories: posts
-tags: ['Веб аналитика']
+tags: ['Продуктовая аналитика']
 #author: Felipe
 ---
 
