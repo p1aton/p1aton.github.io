@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Firebase SQL шпаргалка"
+title:  "SQL шпаргалка по запросам Firebase"
 crawlertitle: "This is our first post"
 summary: "Firebase шпаргалка"
 date:   2020-11-29 23:09:47 +0700
 categories: posts
-tags: ['Веб аналитика']
+tags: ['Продуктовая аналитика']
 #author: Felipe
 ---
 

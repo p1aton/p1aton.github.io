@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "GBQ&GA с вложенной структурой"
+title:  "GBQ & GA преобразование вложенной стуктуры "
 crawlertitle: "This is our first post"
 summary: "Таблицы с вложенной структурой"
 date:   2021-01-29 23:09:47 +0700
 categories: posts
-tags: ['Веб аналитика']
+tags: ['Продуктовая аналитика']
 #author: Felipe
 ---
 
