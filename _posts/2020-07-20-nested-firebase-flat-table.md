@@ -5,7 +5,7 @@ crawlertitle: "This is our first post"
 summary: "Таблицы с вложенной структурой"
 date:   2021-02-01 23:09:47 +0700
 categories: posts
-tags: ['Продуктовая аналитика']
+tags: ['Веб аналитика']
 #author: Felipe
 ---
 
