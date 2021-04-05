@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "GBQ & GA преобразование вложенной стуктуры "
+title:  "GBQ & GA nested to flat"
 crawlertitle: "This is our first post"
 summary: "Таблицы с вложенной структурой"
 date:   2021-01-29 23:09:47 +0700
