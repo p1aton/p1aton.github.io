@@ -68,11 +68,11 @@ FROM (
 
 INT64
 
-#### DATE - Создает ДАТУ из значений INT64, представляющих год, месяц и день.
+#### DATE - Создает ДАТУ из значений INT64, год, месяц и день.
 
-> `` 1. DATE(year, month, day)``
-> ``2. DATE(timestamp_expression[, timezone])``
-> ``3. DATE(datetime_expression)``
+> ``1. DATE(year, month, day)`` 
+> ``2. DATE(timestamp_expression[, timezone])`` 
+> ``3. DATE(datetime_expression)`` 
 
 
 {% highlight sql %}
