@@ -23,9 +23,9 @@ BigQuery поддерживает 4 основных типа данных да�
 
 ### Функции для типа Date:
 * CURRENT_DATE 
-* EXTRACT (part FROM date)
+* EXTRACT
 * DATE 
-* DATE_ADD (date, INTERVAL … )
+* DATE_ADD 
 * DATE_SUB
 * DATE_DIFF
 * DATE_TRUNC
