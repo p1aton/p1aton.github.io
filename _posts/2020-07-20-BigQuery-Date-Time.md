@@ -396,7 +396,9 @@ DATE
 #### DATETIME - Создает объект DATETIME, используя значения INT64 год, месяц, день, час, минуту и ​​секунду.
 
 > ``1. DATETIME(year, month, day, hour, minute, second)`` 
+
 > ``2. DATETIME(date_expression[, time_expression])`` 
+
 > ``3. DATETIME(timestamp_expression [, timezone])`` 
 
 {% highlight sql %}
