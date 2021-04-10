@@ -218,9 +218,6 @@ ORDER BY
 
 ### 15 Closed funnel with time constraints
 
-Count the number of occurrences a user encountered a "start_event" event, and then the number of times
-they encountered an "end_event" event after encountering the start event within a certain time window 
-
 {% highlight sql %}
 SELECT
   COUNTIF(funnel_start_time IS NOT NULL) AS funnel_begin_count,
@@ -255,9 +252,6 @@ FROM (
 
 ### 16 Trio of events are leading up to a desired
 
-Make sure you replace "spend_virtual_currency" down near the bottom there with the actual 
-event you're trying to target
-
 {% highlight sql %}
 SELECT
   s0,
@@ -287,9 +281,6 @@ ORDER BY
 {% endhighlight %}
 
 ### 17 Common screen patterns
-
-Using the new "screen_view" event being tracked by Google Analytics for Firebase, can we figure out what the most
-common triplets of "screen progressions" are through our app?
 
 {% highlight sql %}
 SELECT
