@@ -409,11 +409,13 @@ SELECT DATETIME(2020, 1, 1, 5, 30, 00) as DATETIME
 
 DATETIME
 
-#### EXTRACT (part FROM date) - Возвращает день, месяц, год, часы, минуты, секунды.
+#### EXTRACT - Возвращает день, месяц, год, часы, минуты, секунды.
 
 Принимает следующие значения — MICROSECOND, MILLISECOND, SECOND, MINUTE, HOUR,
 DAYOFWEEK, DAYOFYEAR, YEAR, QUARTER, MONTH, WEEK, DAY
 WEEK(<WEEKDAY>): SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
+
+> ``EXTRACT(part FROM datetime_expression)``
 
 {% highlight sql %}
 SELECT
@@ -685,50 +687,79 @@ LIMIT 1
 DATETIME
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Функции для типа Time:
 
-* CURRENT_TIME
-* TIME
+#### CURRENT_TIME - Получаем текущую дату.
+
+> ``CURRENT_DATE([time_zone])``
+
+{% highlight sql %}
+SELECT CURRENT_TIME() as now;
+{% endhighlight %}
+
+##### Return Data Type
+
+TIME
+  
+#### TIME - Создает объект TIME, используя значения INT64 (час, минуту и ​​секунду).
+
+> ``1. TIME(hour, minute, second)`` 
+
+> ``2. TIME(timestamp, [timezone])`` 
+
+> ``3. TIME(datetime)``
+
+
+{% highlight sql %}
+SELECT
+    time_hms,
+    Time_stamp,
+    Date_time
+FROM (
+  SELECT
+     TIME(15, 30, 00) as time_hms,
+     TIME(CAST(TIMESTAMP_MICROS(event_timestamp) AS TIMESTAMP)) As Time_stamp,
+     TIME(CAST(TIMESTAMP_MICROS(event_timestamp) AS DATETIME)) As Date_time,
+  FROM
+    `firebase-public-project.analytics_153293282.events_20181003`)
+LIMIT 1
+{% endhighlight %}
+
+##### Return Data Type
+
+TIME
+
+#### EXTRACT
+
 * TIME_ADD
 * TIME_SUB
 * TIME_DIFF
 * TIME_TRUNC
 * FORMAT_TIME
 * PARSE_TIME
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Функции для типа Timestamp
 
@@ -758,9 +789,7 @@ DATETIME
 
 
 
-{% highlight sql %}
-select current_date;
-{% endhighlight %}
+
 
 
 
