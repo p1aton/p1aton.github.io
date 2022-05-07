@@ -212,7 +212,7 @@ exit – разлогиниться
 [Справочник основных команд Linux с примерами](http://zabrosov.ru/)  
 [Команды Linux: расширенный справочник команд Unix / Linux / PuTTY SSH](https://putty.org.ru/articles/unix-linux-ref.html)  
 [Основные команды Linux: справочник команд Linux](https://otus.ru/nest/post/830/)  
-
+[Команды Linux](https://www.flenov.info/story/show/Komandy-Linux)  
 
 [Oh My Zsh](https://ohmyz.sh/#install)
 
