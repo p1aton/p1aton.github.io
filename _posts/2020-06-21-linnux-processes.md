@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Процессы в Linux"
-crawlertitle: "Основные базовые команды Linux"
+crawlertitle: "Процессы в Linux"
 summary: "Процессы Linux"
 date:   2022-05-11 23:09:47 +0700
 categories: posts
