@@ -1282,6 +1282,85 @@ element.removeEventListener("mousemove", myFunction); // Remove Listener
 <button onclick="this.innerHTML = Date()">The time is?</button>
 ```
 
+
+
+### DOM Alert / Popup
+```js
+window.alert("Hello World");
+alert("Hello World");
+
+window.confirm("sometext");
+confirm("sometext");
+
+confirm("sometext");
+
+if (confirm("Press a button!")) {
+    txt = "You pressed OK!";
+} else {
+    txt = "You pressed Cancel!";
+}
+
+window.prompt("sometext","defaultText");
+prompt("sometext","defaultText");
+
+var person = prompt("Please enter your name", "Harry Potter");
+if (person == null || person == "") {
+    txt = "User cancelled the prompt.";
+} else {
+    txt = "Hello " + person + "! How are you today?";
+}
+
+```
+
+### DOM (BOM) Window / Screen Methods
+```js
+window.innerHeight; // Browser Height in pixels
+window.innerWidth; // Browser Width in pixels
+
+window.open(); // open a new window
+window.close(); // close the current window
+window.moveTo(); // move the current window
+window.resizeTo(); // resize the current window
+
+screen.width
+screen.height
+screen.availWidth
+screen.availHeight
+screen.colorDepth
+screen.pixelDepth
+```
+
+### DOM (BOM) Locations and History
+```js
+window.location.href // property returns the URL of the current page
+window.location.hostname // property returns the name of the internet host
+window.location.pathname // property returns the pathname of the current page
+window.location.protocol // property returns the web protocol of the page
+window.location.port // property returns the number of the internet host port
+window.location.assign("https://URL") // method loads a new document
+
+window.history.back() // method loads the previous URL in the history list
+window.history.forward() // method loads the next URL in the history list
+```
+
+### DOM Window / Browser Navigator
+```js
+navigator.appName // Returns the application name of the browser
+navigator.appCodeName // Returns the application code name of the browser
+navigator.appVersion // Returns version information about the browser
+navigator.platform // Returns the browser platform (operating system)
+navigator.cookieEnabled // Returns true if cookies are enabled, otherwise false
+navigator.product // Returns Browser Engine
+navigator.userAgent // Returns the user-agent header sent by the browser to the server
+navigator.language // Returns the browser's language
+
+navigator.onLine // onLine property returns true if the browser is online
+navigator.offLine // offLine property returns true if the browser is offline
+
+navigator.javaEnabled() // Returns true if Java is enabled
+```
+[Back to Top](#javascript-cheatsheet)
+
 ### DOM Events
 <table>
 	<tbody>
@@ -1718,81 +1797,3 @@ element.removeEventListener("mousemove", myFunction); // Remove Listener
 	</tbody>
 </table>
 
-
-
-### DOM Alert / Popup
-```js
-window.alert("Hello World");
-alert("Hello World");
-
-window.confirm("sometext");
-confirm("sometext");
-
-confirm("sometext");
-
-if (confirm("Press a button!")) {
-    txt = "You pressed OK!";
-} else {
-    txt = "You pressed Cancel!";
-}
-
-window.prompt("sometext","defaultText");
-prompt("sometext","defaultText");
-
-var person = prompt("Please enter your name", "Harry Potter");
-if (person == null || person == "") {
-    txt = "User cancelled the prompt.";
-} else {
-    txt = "Hello " + person + "! How are you today?";
-}
-
-```
-
-### DOM (BOM) Window / Screen Methods
-```js
-window.innerHeight; // Browser Height in pixels
-window.innerWidth; // Browser Width in pixels
-
-window.open(); // open a new window
-window.close(); // close the current window
-window.moveTo(); // move the current window
-window.resizeTo(); // resize the current window
-
-screen.width
-screen.height
-screen.availWidth
-screen.availHeight
-screen.colorDepth
-screen.pixelDepth
-```
-
-### DOM (BOM) Locations and History
-```js
-window.location.href // property returns the URL of the current page
-window.location.hostname // property returns the name of the internet host
-window.location.pathname // property returns the pathname of the current page
-window.location.protocol // property returns the web protocol of the page
-window.location.port // property returns the number of the internet host port
-window.location.assign("https://URL") // method loads a new document
-
-window.history.back() // method loads the previous URL in the history list
-window.history.forward() // method loads the next URL in the history list
-```
-
-### DOM Window / Browser Navigator
-```js
-navigator.appName // Returns the application name of the browser
-navigator.appCodeName // Returns the application code name of the browser
-navigator.appVersion // Returns version information about the browser
-navigator.platform // Returns the browser platform (operating system)
-navigator.cookieEnabled // Returns true if cookies are enabled, otherwise false
-navigator.product // Returns Browser Engine
-navigator.userAgent // Returns the user-agent header sent by the browser to the server
-navigator.language // Returns the browser's language
-
-navigator.onLine // onLine property returns true if the browser is online
-navigator.offLine // offLine property returns true if the browser is offline
-
-navigator.javaEnabled() // Returns true if Java is enabled
-```
-[Back to Top](#javascript-cheatsheet)
