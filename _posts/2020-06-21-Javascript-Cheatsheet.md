@@ -910,8 +910,7 @@ Boolean(x);       // returns false
 [Back to Top](#javascript-cheatsheet)
 
 ## Comparison Operators
-{% highlight r %}
-```
+```js
 // Comparison Operators
 ==    (equal to)
 ===   (equal value and equal type)
@@ -927,7 +926,6 @@ Logical Operators
 ||    (or)
 !     (not)
 ```
-{% endhighlight %}
 [Back to Top](#javascript-cheatsheet)
 
 ## Conditional
@@ -1719,6 +1717,8 @@ element.removeEventListener("mousemove", myFunction); // Remove Listener
 		</tr>
 	</tbody>
 </table>
+
+
 
 ### DOM Alert / Popup
 ```js
