@@ -113,6 +113,7 @@ typeof function myFunc(){}   // Returns "function"
 
 ## Operators
 ### Arithmetic Operators
+{% highlight r %}
 ```
 +	  // Addition
 -	  // Subtraction
@@ -122,7 +123,9 @@ typeof function myFunc(){}   // Returns "function"
 ++	// Increment
 --  // Decrement
 ```
+{% endhighlight %}
 ### Assignment Operators
+{% highlight r %}
 ```
 =	    // Example: x = y     // Same As: x = y
 +=    // Example: x += y    // Same As: x = x + y
@@ -138,6 +141,7 @@ typeof function myFunc(){}   // Returns "function"
 |=	  // Example: x |= y	  // Same As:x = x | y
 **=	  // Example: x **= y	  // Same As:x = x ** y
 ```
+{% endhighlight %}
 [Back to Top](#javascript-cheatsheet)
 
 ## Functions
@@ -910,6 +914,7 @@ Boolean(x);       // returns false
 [Back to Top](#javascript-cheatsheet)
 
 ## Comparison Operators
+{% highlight r %}
 ```
 // Comparison Operators
 ==    (equal to)
@@ -926,6 +931,7 @@ Logical Operators
 ||    (or)
 !     (not)
 ```
+{% endhighlight %}
 [Back to Top](#javascript-cheatsheet)
 
 ## Conditional
@@ -1249,6 +1255,7 @@ document.write(text);  // Write into the HTML output stream
 ```
 
 ### DOM Node Tree
+{% highlight r %}
 ```
 // You can use the following node properties to navigate between nodes with JavaScript:
 .parentNode
@@ -1261,6 +1268,7 @@ document.write(text);  // Write into the HTML output stream
 var myTitle = document.getElementById("demo").firstChild.nodeValue;
 var myTitle = document.getElementById("demo").childNodes[0].nodeValue;
 ```
+{% endhighlight %}
 
 ### DOM Event Handlers
 ```js
@@ -1342,7 +1350,7 @@ element.removeEventListener("mousemove", myFunction); // Remove Listener
 		</tr>
 		<tr>
 			<td>change</td>
-			<td>The event occurs when the content of a form element, the selection, or the checked state have changed (for <input>, <select>, and <textarea>)</td>
+			<td>The event occurs when the content of a form element, the selection, or the checked state have changed (for , , and <textarea>)
 			<td>Event</td>
 		</tr>
 		<tr>
