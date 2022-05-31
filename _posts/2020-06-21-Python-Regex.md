@@ -586,6 +586,53 @@ print(result.end())   # 6
 print(result.span()) # (0, 6)
 {% endhighlight %}
 
+# re.match
+
+re.match(pattern, string, flags=0) – ищет совпадения в тексте, в начале строки.
+
+**Параметры:**
+
+* pattern - регулярное выражение
+* string - строка, к которой нужно применить регулярное выражение
+* flags - флаги
+* 
+**Возвращаемое значение:**
+
+* Объект Match, если совпадение было найдено
+* None, если нету совпадений
+
+**Примеры использования:**
+
+{% highlight r %}
+import re
+
+pattern = 'Привет'
+string = 'Привет, как твои дела? Привет, нормально, учу регулярные выражения.'
+result = re.match(pattern, string)
+
+print(result)
+# В данном примере будет выведено <re.Match object; span=(0, 6), match='Привет'>
+{% endhighlight %}
+
+Обратите внимание, что re.match ищет **ПЕРВОЕ** совпадение **В НАЧАЛЕ СТРОКИ**. В примере выше re.match находит только первое вхождение pattern в string.
+
+Если строка будет такая:
+
+{% highlight r %}
+import re
+
+pattern = 'Привет'
+string = 'Как твои дела? Привет, нормально, учу регулярные выражения.'
+result = re.match(pattern, string)
+
+print(result)
+# В данном примере будет выведено None
+{% endhighlight %}
+
+
+
+
+
 
 
 
