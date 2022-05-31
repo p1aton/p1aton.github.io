@@ -586,7 +586,7 @@ print(result.end())   # 6
 print(result.span()) # (0, 6)
 {% endhighlight %}
 
-# re.match
+# Match re.match
 
 **re.match(pattern, string, flags=0)** – ищет совпадения в тексте, в начале строки.
 
@@ -629,7 +629,7 @@ print(result)
 # В данном примере будет выведено None
 {% endhighlight %}
 
-# re.search
+# Match re.search
 
 **re.search(pattern, string, flags=0)** - похож на re.match, но ищет совпадения не только в начале строки.
 
@@ -674,7 +674,7 @@ print(result)
 
 Если бы в этом примере мы использовали re.match, то он бы возвратил None.
 
-# re.fullmatch
+# Match re.fullmatch
 
 **re.fullmatch(pattern, string, flags=0)** - определяет соответствие строки переданному шаблону. Если вся строка соответствует шаблону - выводит объект Match, иначе - None.
 
@@ -697,6 +697,37 @@ import re
 print(re.fullmatch('\d', '111')) #None
 print(re.fullmatch('\d', '1')) #<re.Match object; span=(0, 1), match='1'>
 {% endhighlight %}
+
+#  Match re.finditer
+
+**re.finditer(pattern, string, flags=0)** - ищет все вхождения pattern в строке string и возвращает итератор Match объектов.
+
+**Параметры:**
+
+* pattern - регулярное выражение
+* string - строка, к которой нужно применить регулярное выражение
+* flags - флаги, пройдём позже
+
+**Возвращаемое значение:**
+
+* Итератор Match объектов
+
+**Примеры использования:**
+
+{% highlight r %}
+import re
+
+pattern = 'Привет'
+string = 'Привет, как твои дела? Привет, нормально, учу регулярные выражения.'
+result = re.finditer(pattern, string, 0)
+for i in result:
+    print(i)
+# В данном примере будет выведено:
+#<re.Match object; span=(0, 6), match='Привет'>
+#<re.Match object; span=(23, 29), match='Привет'>
+{% endhighlight %}
+
+
 
 
 
