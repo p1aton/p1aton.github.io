@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Airflow команды"
+title:  "Airflow settings and configuration"
 crawlertitle: "This is our first post"
 summary: "Airflow команды"
 date:   2022-08-16 23:09:48 +0700
