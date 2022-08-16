@@ -9,26 +9,9 @@ tags: ['Дата аналитика']
 #author: Felipe
 ---
 
-Apache Airflow является лучшим инструментом с открытым исходным кодом для планирования и мониторинга; Airflow представляет рабочие процессы в виде направленных ациклических графов или групп обеспечения доступности баз данных. По сути, это означает, что рабочие процессы представлены набором задач и зависимостей между ними.
+Apache Airflow is a system to programmatically author, schedule, and monitor data pipelines. How to quickly deploy, diagnose, and evaluate your data pipeline tasks in Airflow using CLI
 
 
-## Go to airflow container
-
-{% highlight python %}
-docker exec -it b5d116ad83cc bash
-{% endhighlight %}
-
-## Create user
-
-{% highlight python %}
-airflow users create \
-    --username airflow \
-    --firstname Airflow \
-    --lastname Apache \
-    --role Admin \
-    --email airflow@example.com \
-    --password airflow
-{% endhighlight %}
 
 # Install Airflow
 
@@ -89,17 +72,17 @@ mkdir airflow/dags
 
 The first connection for my API call:
 
-    * connection type of HTTP.
-    * connection identifier of moves_profile.
-    * host string of the full API endpoint: https://moves....
+* connection type of HTTP.
+* connection identifier of moves_profile.
+* host string of the full API endpoint: https://moves....
 
 The second connection for my project database:
 
-    * connection type of Postgres.
-    * connection identifier of users (name of the table).
-    * host string of 127.0.0.1.
-    * schema string (database name) of kojak.
-    * login of postgres (default).
+* connection type of Postgres.
+* connection identifier of users (name of the table).
+* host string of 127.0.0.1.
+* schema string (database name) of kojak.
+* login of postgres (default).
 
 ## 3. Create a DAG python configuration file.
 
@@ -172,9 +155,9 @@ get_profile_task = \
 
 Be sure you've set-up Port 8080:
 
-    * Custom TCP Rule
-    * Port Range: 80 (for web REST)
-    * Source: Anywhere).
+* Custom TCP Rule
+* Port Range: 80 (for web REST)
+* Source: Anywhere).
 
 2. Install Docker on the EC2 instance.
 
