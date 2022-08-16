@@ -249,7 +249,7 @@ airflow dags list-runs | List DAG runs given a DAG id
 airflow dags next-execution | Get the next execution datetimes of a DAG
 airflow dags pause | Pause a DAG
 airflow dags report | Show DagBag loading report
-airflow dags show | Displays DAG's tasks with their dependencies
+airflow dags show | Displays DAGs tasks with their dependencies
 airflow dags state | Get the status of a dag run
 airflow dags test | Execute one single DagRun
 airflow dags trigger | Trigger a DAG run
