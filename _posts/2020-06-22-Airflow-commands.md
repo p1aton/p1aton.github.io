@@ -159,9 +159,9 @@ Be sure you've set-up Port 8080:
 * Port Range: 80 (for web REST)
 * Source: Anywhere).
 
-2. Install Docker on the EC2 instance.
+## 2. Install Docker on the EC2 instance.
 
-3. Pull and run the docker-airflow image onto your EC2 instance
+## 3. Pull and run the docker-airflow image onto your EC2 instance
 
 Instructions for this instance can be found on the [image Github page](https://github.com/puckel/docker-airflow).
 
@@ -170,7 +170,7 @@ docker pull puckel/docker-airflow
 docker run -d -p 8080:8080 puckel/docker-airflow
 {% endhighlight %}
 
-4. Create a tunnel from your local terminal into your EC2 instance on port 8080.
+## 4. Create a tunnel from your local terminal into your EC2 instance on port 8080.
 
 {% highlight python %}
 ssh -i ~/.ssh/aws_key_file.pem -NL 12345:localhost:8080 ubuntu@XX.XXX.XXX.XXX
