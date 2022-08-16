@@ -57,5 +57,5 @@ CTRL+/ - комментарий
 
 Ссылки:
 
-[42 Tips and Tricks](https://www.jetbrains.com/pycharm/guide/playlists/42/)
-[Python. Эффективная разработка в IDE PyCharm](https://youtu.be/caUTeTSzG5M)
+* [42 Tips and Tricks](https://www.jetbrains.com/pycharm/guide/playlists/42/)
+* [Python. Эффективная разработка в IDE PyCharm](https://youtu.be/caUTeTSzG5M)
