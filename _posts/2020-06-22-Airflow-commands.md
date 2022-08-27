@@ -311,6 +311,28 @@ airflow tasks list DAG_ID | will list down all tasks related to a given DAG
 airflow tasks test DAG_ID> TASK_ID> EXECUTION_TIME> | will perform test on a specific task in a DAG
 {% endhighlight %}
 
+##CLI
+
+
+* Renders all templateable attributes of a given task
+
+airflow tasks render [dag id] [task id] [desired execution date]
+
+{% highlight python %}
+airflow tasks render example_dag run_this 2021-01-01
+{% endhighlight %}
+
+* Add postgres connections
+
+{% highlight python %}
+airflow connections add \
+--conn-type postgres \
+--conn-host localhost \
+--conn-login postgres \
+--conn-password mysecretpassword \
+my_postgres
+{% endhighlight %}
+
 Ссылки:
 
 * [Apache Airflow Cheatsheet](https://medium.com/geekculture/apache-airflow-cheatsheet-205f82d6edda)
