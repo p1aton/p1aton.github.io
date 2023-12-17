@@ -78,3 +78,9 @@ sudo apt install virtualbox-guest-utils virtualbox-guest-dkms
 sudo ./VBoxLinuxAdditions.run
 {% endhighlight %}
 
+### Удаление VirtualBox
+
+{% highlight python %}
+apt-get purge virtualbox*
+apt-get autoremove
+{% endhighlight %}
